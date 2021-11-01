@@ -36,6 +36,9 @@ public class ParkingPermit {
     @Column(name = "owner")
     private String owner;
 
+    @Column(name = "enabled", nullable = false, columnDefinition = "boolean default true")
+    private Boolean enabled;
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
